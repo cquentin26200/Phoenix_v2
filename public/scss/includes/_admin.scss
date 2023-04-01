@@ -1,0 +1,32 @@
+.admin {
+    select {
+        margin-bottom: 2rem;
+    }
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+
+    td {
+        width: 15rem;
+    }
+
+    thead {
+        border-top: 1px solid rgba($color: grey, $alpha: .3);
+        th {
+            text-transform: capitalize;
+        }
+    }
+
+    tr {
+        border-bottom: 1px solid rgba($color: grey, $alpha: .3);
+
+        td, th {
+            padding: 1.5rem;
+        }
+        td.desc {
+            overflow: hidden;
+        }
+    }
+}

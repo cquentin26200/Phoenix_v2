@@ -1,0 +1,54 @@
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      margin-left: 20px;
+      display: flex;
+      gap: 20px;
+      a {
+        color: $black-color;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      width: 100%;
+
+      li {
+        &:nth-of-type(-n + 2) {
+          a {
+            color: $black-color;
+          }
+        }
+
+        a {
+          color: $footer-color;
+          font-size: clamp(1.5rem, 2vw, 2rem);
+
+          img {
+            width: 5rem;
+          }
+        }
+      }
+    }
+  }
+  .carousel {
+    img {
+      height: 70rem;
+      width: 100%;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      height: max-content;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "lulum/phoenix_lyon_2023",
+    "autoload": {
+        "psr-4": {
+            "Travel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lux",
+            "email": "lmoinel@edenschool.fr"
+        }
+    ],
+    "require": {}
+}

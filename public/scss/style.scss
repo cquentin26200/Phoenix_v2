@@ -1,0 +1,51 @@
+//variable
+
+$footer-color: #6c757d;
+$nav-bc: #75c9c8;
+$black-color: #000;
+$btn-normal: #17a2b8;
+$hover-btn: #fff;
+$form: #d1ecf1;
+$form-bc: rgba($color: $nav-bc, $alpha: .6);
+$fc: #0C5460;
+
+body {
+  &:not(body#homepage) {
+    header {
+      nav {
+        padding: 1.5rem;
+        background-color: $nav-bc;
+      }
+
+      .carousel-inner {
+        height: 30rem;
+        margin: 3rem;
+        width: unset;
+      }
+    }
+  }
+}
+
+main {
+  margin: 3rem 3rem 3rem 3rem;
+}
+
+.error {
+  font-size: 1.3rem;
+  color: red;
+}
+
+@import "includes/global";
+@import "includes/function";
+@import "includes/footer";
+@import "includes/header";
+@import "includes/homepage";
+@import "includes/catalogue";
+@import "includes/allTravel";
+@import "includes/login";
+@import "includes/register";
+@import "includes/reservation";
+@import "includes/confirmation";
+@import "includes/cart";
+@import "includes/payment";
+@import "includes/admin";

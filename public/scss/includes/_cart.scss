@@ -1,0 +1,41 @@
+.cart {
+  > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+
+    > div {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding-bottom: 20px;
+      a {
+        color: black;
+        text-decoration: underline;
+        display: flex;
+        align-items: center;
+        height: max-content;
+      }
+      &:nth-of-type(even) {
+        p,
+        a {
+          background-color: #fff3cd;
+        }
+      }
+      &:nth-of-type(odd) {
+        p,
+        a {
+          background-color: #d1e7dd;
+        }
+      }
+      p,
+      a {
+        padding: 1.5rem;
+        border-radius: 8px;
+        width: 100%;
+      }
+    }
+  }
+}

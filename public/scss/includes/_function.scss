@@ -1,0 +1,29 @@
+.button {
+  color: $btn-normal;
+  padding: 1rem;
+  width: 75%;
+  border: 1px solid $btn-normal;
+  display: block;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  background-color: unset;
+  &:hover {
+    color: $hover-btn;
+    background-color: $btn-normal;
+  }
+}
+
+.button {
+  color: $hover-btn;
+  padding: 1rem;
+  border: 1px solid $btn-normal;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background-color: $btn-normal;
+  width: 100%;
+  &:hover {
+    color: $btn-normal;
+    background-color: unset;
+  }
+}

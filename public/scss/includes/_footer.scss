@@ -1,0 +1,43 @@
+footer {
+  nav {
+    ul {
+      height: 6rem;
+      font-size: clamp(1.5rem, 2vw, 2rem);
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      background-color: $nav-bc;
+
+      button {
+        display: flex;
+        align-items: center;
+        background-color: unset;
+        border: none;
+        color: $footer-color;
+        width: 100%;
+        height: 100%;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    nav {
+      ul {
+        justify-content: center;
+
+        button {
+          span {
+            margin-left: 1rem;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

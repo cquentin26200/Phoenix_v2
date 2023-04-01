@@ -1,0 +1,32 @@
+div.allTravel {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 17rem;
+        height: 10rem;
+        border: 2px solid rgba(0, 0, 0, 0.175);
+        padding: 5px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    form {
+        position: relative;
+
+        input[type=submit] {
+            position: absolute;
+            width: 100%;
+            background-color: transparent;
+            left: 0;
+            height: 100%;
+            border: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main .allTravel {
+        display: none;
+    }
+}

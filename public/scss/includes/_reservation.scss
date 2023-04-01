@@ -1,0 +1,99 @@
+.reservation {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 3rem;
+  flex-direction: column;
+
+  &__centrer {
+    margin: 20px 0;
+    gap: 30px;
+    display: flex;
+
+    div:first-of-type {
+      width: 100%;
+    }
+    div:last-of-type {
+      width: 70%;
+    }
+  }
+
+  &__infos_form {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    &__email_confirm,
+    .btn {
+      text-align: center;
+    }
+    .submit {
+      @extend .button;
+    }
+  }
+  .card {
+    width: 25%;
+    input {
+      text-align: left;
+      padding: 8px;
+      font-size: 1.3rem;
+    }
+  }
+
+  .formulaire {
+    width: 100%;
+
+    h1 {
+      background-color: rgba($color: $nav-bc, $alpha: 0.6);
+      padding: 1.5rem;
+      font-weight: 400;
+      font-size: 2.3rem;
+      color: $fc;
+      margin: 0;
+      letter-spacing: .76px;
+    }
+  }
+
+  .presentation {
+    border: 1px solid $btn-normal;
+    border-radius: 8px;
+
+
+    img {
+      object-fit: cover;
+      height: 14.5rem;
+      border-radius: 8px 8px 0px 0px;
+    }
+
+    .card-title {
+      margin: 1rem 0 1rem 2rem;
+      font-size: 2.5rem;
+    }
+
+    .card-text {
+      background-color: rgba($color: $nav-bc, $alpha: 0.6);
+      padding: 1.5rem;
+      color: $fc;
+    }
+    .card-body {
+      line-height: 2.3;
+    }
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .reservation {
+    flex-direction: row-reverse;
+  }
+
+  .presentation {
+    width: 40%;
+  }
+
+  .formulaire {
+    width: 60%;
+  }
+}

@@ -1,0 +1,20 @@
+#homepage {
+    header {
+        .nav-fluid {
+            position: absolute;
+            z-index: 1;
+        }
+
+        nav {
+            height: max-content;
+            margin: 3rem 0 0 3rem;
+        }
+    }
+
+    main {
+        a {
+            @extend .button;
+            margin: 5rem auto;
+        }
+    }
+}

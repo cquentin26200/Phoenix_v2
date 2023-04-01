@@ -1,0 +1,59 @@
+.confirmation {
+  > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+
+    > div {
+      div {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding-bottom: 20px;
+
+        p {
+          padding: 1.5rem;
+          border-radius: 8px;
+          &:last-of-type {
+            width: 60%;
+          }
+          &:first-of-type {
+            width: 40%;
+          }
+        }
+      }
+    }
+    .info {
+      div {
+        p {
+          background-color: #fff3cd;
+        }
+      }
+    }
+    .total {
+      div {
+        p {
+          background-color: #d1e7dd;
+        }
+      }
+    }
+  }
+  span {
+    background-color: #cff4fc;
+    display: block;
+    padding: 1.5rem;
+    &:last-of-type {
+      border-radius: 8px;
+      text-align: right;
+    }
+    &:first-of-type {
+      margin: -3rem 0 3rem 0;
+      text-align: left;
+      border-radius: 0px 0px 8px 8px;
+    }
+  }
+  + .allTravel {
+    margin-top: 3rem;
+  }
+}
